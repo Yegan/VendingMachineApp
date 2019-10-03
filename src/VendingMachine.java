@@ -10,6 +10,7 @@ import Products.SmartieChocolate;
 public class VendingMachine {
 
     public void buy(Product product) throws ProductNotFoundException{
+    // checking for the type of product before purchasing that product
     if(product instanceof Coke){
         if(Coke.stock >= 1){
             Coke.stock -=1;
@@ -24,8 +25,8 @@ public class VendingMachine {
                 if (LaysChips.stock >= 1) {
                     LaysChips.stock -= 1;
                 }
-            }
-
+   }
+    // throwing an exception if the product purchases is below 0
            if(Coke.stock == 0) {
                     throw new SoftDrinksOutOfStockException();
            }
