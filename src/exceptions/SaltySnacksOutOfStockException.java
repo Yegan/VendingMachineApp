@@ -1,4 +1,4 @@
-package Exceptions;
+package exceptions;
 
 public class SaltySnacksOutOfStockException extends ProductNotFoundException{
     public  SaltySnacksOutOfStockException() {

@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e1e20a8-daed-401f-a34f-66210959bc43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exceptions/InvalidProductException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VendingMachine/VendingMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VendingMachine/VendingMachine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/ChocolatesAllGone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/ChocolatesAllGone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/ProductNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/ProductNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/SaltySnacksOutOfStockException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/SaltySnacksOutOfStockException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/SoftDrinksOutOfStockException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/SoftDrinksOutOfStockException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Products/Coke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/Coke.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Products/LaysChips.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/LaysChips.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Products/SmartieChocolate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/SmartieChocolate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VendingMachine.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,7 +80,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

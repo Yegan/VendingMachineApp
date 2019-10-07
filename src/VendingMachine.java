@@ -1,16 +1,16 @@
-import Exceptions.ChocolatesAllGone;
-import Exceptions.ProductNotFoundException;
-import Exceptions.SaltySnacksOutOfStockException;
-import Exceptions.SoftDrinksOutOfStockException;
-import Products.Coke;
-import Products.LaysChips;
-import Products.Product;
-import Products.SmartieChocolate;
+import exceptions.*;
+import products.Coke;
+import products.LaysChips;
+import products.Product;
+import products.SmartieChocolate;
 
 public class VendingMachine {
 
     public void buy(Product product) throws ProductNotFoundException{
     // checking for the type of product before purchasing that product
+    if(!(product instanceof Product)){
+    throw new InvalidProductException();
+    }
     if(product instanceof Coke){
         if(Coke.stock >= 1){
             Coke.stock -=1;
@@ -41,13 +41,13 @@ public class VendingMachine {
 
     public void addStock(Product product, int newStock){
             if (product instanceof Coke) {
-                Coke.stock = newStock;
+                Coke.stock += newStock;
             }
             if (product instanceof SmartieChocolate) {
-                SmartieChocolate.stock = newStock;
+                SmartieChocolate.stock += newStock;
             }
             if (product instanceof LaysChips) {
-                LaysChips.stock = newStock;
+                LaysChips.stock += newStock;
             }
         }
 
@@ -69,6 +69,7 @@ public class VendingMachine {
     }
 
     public static void main(String[] args) {
+
         LaysChips laysChips = new LaysChips();
         Coke coke1 = new Coke();
         SmartieChocolate smartieChocolate = new SmartieChocolate();
@@ -90,6 +91,9 @@ public class VendingMachine {
         }catch (ProductNotFoundException e){
             e.printStackTrace();
         }
+        System.out.println("Current stock value:");
+        vendingMachine.getStock(laysChips);
+
 
     }
 

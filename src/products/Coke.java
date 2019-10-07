@@ -1,6 +1,4 @@
-package Products;
-
-import Products.Product;
+package products;
 
 public class Coke extends Product {
    public static int stock;

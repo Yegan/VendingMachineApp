@@ -1,6 +1,4 @@
-package Products;
-
-import Products.Product;
+package products;
 
 public class LaysChips extends Product {
    public static int stock;
